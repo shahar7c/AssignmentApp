@@ -1,0 +1,142 @@
+.row {
+    display: block;
+    padding: 15px;
+} 
+
+.fs{
+  height: 100%;
+  width: 90%;
+  border-bottom: 1px solid #999;
+}
+
+.highlight{
+  color: #27A4DD;
+}
+
+h1,p,.goBtn{
+    padding-left: 2vmax;
+}
+
+
+p{
+  padding-top: .5em;
+  color: #BBB;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 6vmin;
+    line-height: .8;
+    letter-spacing: -.06em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 13vmin;
+    line-height: .8;
+    letter-spacing: -.06em;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 20vh;
+  }
+  
+  .goBtn , .btnAdd, .btnNext, .btnPrevious{
+    display: block;
+    width:100%;
+    height:100%;
+    color: #666;
+    font-weight: bold;
+    font-size: 3vmin;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: -.07em;
+    padding: .5vmax;
+    transition: all .2s ease-in-out; 
+  }
+  
+  .btnInfo{
+    font-size: 3vmin;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    font-weight: normal;
+    padding-left: -10vw;
+    opacity: 0;
+    transition: all .2s ease .15s;
+  }
+  
+  .goBtn:hover{
+    text-decoration: none;
+    padding-left: 2.5vmax;
+    color: rgb(0, 0, 0);
+  }
+  
+  .goBtn:hover .btnInfo {
+    opacity: 1;
+    padding-left: 3vmin;
+  }
+
+
+  
+  footer{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    padding-top: 5vh;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #999;
+  }
+  
+  span:focus{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .custom-control-label{
+    font-weight: bold;
+    font-size: 3vmin;
+    letter-spacing: -.07em;
+}
+
+.search-user {
+  margin-top: 10px;
+  max-width: 350px;
+}
+
+.form-control::placeholder  {
+  font-family: FontAwesome;
+}
+
+.btnUpdate{
+  color: rgb(119, 0, 255);
+}
+
+
+.btnDelete{
+  opacity: 0;
+  color: red;
+  /* transition: all .2s ease .15s; */
+}
+
+.goBtn:hover .btnDelete {
+  opacity: 1;
+  padding-left: 3vmin;
+  cursor: pointer;
+}
+
+.btnAdd{
+  color: green;
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+.btnNext, .btnPrevious{
+  color: #27A4DD;
+  margin-left: 13px;
+  cursor: pointer;
+}

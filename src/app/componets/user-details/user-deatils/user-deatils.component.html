@@ -1,0 +1,51 @@
+<div class="container">
+<div class="card-deck">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="highlight">
+                        <h4 class="card-header">User Details</h4>
+                </div>
+                    <h5 class="card-title">{{this.userDetails?.name}}</h5>
+                    <div class="card-body">
+                        <p class="card-text"><b>username: </b> {{this.userDetails?.username}}</p>
+                        <p class="card-text"><b>email: </b> {{this.userDetails?.email}}</p>
+                        <p class="card-text"><b>phone: </b> {{this.userDetails?.phone}}</p>
+                        <p class="card-text"><b>website: </b> {{this.userDetails?.website}}</p>
+                        <p class="card-text"><b><u>address info</u></b></p>
+                        <p class="card-text"><b>street: </b> {{this.userDetails?.address.street}}</p>
+                        <p class="card-text"><b>city: </b> {{this.userDetails?.address.city}}</p>
+                        <p class="card-text"><b>zipcode: </b> {{this.userDetails?.address.zipcode}}</p>
+                        <p class="card-text"><b><u>geo info</u></b></p>
+                        <p class="card-text"><b>lat: </b> {{this.userDetails?.address.geo.lat}}</p>
+                        <p class="card-text"><b>lng: </b> {{this.userDetails?.address.geo.lng}}</p>
+                        <p class="card-text"><b><u>company info</u></b></p>
+                        <p class="card-text"><b>name: </b> {{this.userDetails?.company.name}}</p>
+                        <p class="card-text"><b>catchPhrase: </b> {{this.userDetails?.company.catchPhrase}}</p>
+                        <p class="card-text"><b>bs: </b> {{this.userDetails?.company.bs}}</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<h3><br><u>User Posts</u></h3>
+
+<div class="card-deck">
+    <div class="row">
+        <div class="col-lg-4 col-md-6" *ngFor="let post of posts; let i = index;">
+            <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">{{post.title}}</h4>
+                        <div>
+                            <p class="card-text">{{post.body}}</p>  
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Post No. {{i+1}}</small>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
